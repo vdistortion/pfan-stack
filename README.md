@@ -12,8 +12,8 @@ This is a complete stack for running builded Angular App into Docker containers 
 
 It is composed by 4 containers:
 
-- `angularfrontend`, the one that runs the builded Angular APP in a container with Node and Nginx.
-- `nodebackend`, a container with node runing and the ORM Sequelize conected to the "postgres" container.
+- `angular`, the one that runs the builded Angular APP in a container with Node and Nginx.
+- `fastify`, a container with node runing and the ORM Sequelize conected to the "postgres" container.
 - `middlenginx` that handles the request with a proxy configuration, linking front and back.
 - `postgres` storing the PostgreSQL 14 databases.
 
